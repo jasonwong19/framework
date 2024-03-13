@@ -1,0 +1,28 @@
+<body>
+
+    <div class="row"> 
+        <div class="col-6 p-5">
+            <div class="card"></div> 
+                <div class="card-body"> 
+                    <h5 class="card-title">Belajar React Bersama Kamu</h5> 
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, culpa?</p>
+                    <a href="#" class="btn btn-primary">Submit</a> 
+                </div>
+            </div>
+            <script type="text/jsx">            
+                // Membuat Komponen dengan Class Komponen 
+            class Button extends React.Component {
+            render() { 
+                const btn = React.createElement('button', {class : 'btn btn-primary'}, 'Belajar React') 
+                return btn 
+               } 
+            } 
+            ReactDOM.render(<Button />, document.getElementById('root')) 
+        </script> 
+
+        <!--Bootstrap Bundle with Popper --> 
+        <script src="https://cdn.sdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFY1zcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin=" anonymous"></script>
+
+</body>

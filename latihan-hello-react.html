@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Belajar Reactjs</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="nama"></div>
+    <div id="kelas"></div>
+    <script type="text/babel">
+        class Hello extends React.Component{
+            render() {
+                return <h1>Hello World Reactjs!</h1>
+                }
+            }
+        class Nama extends React.Component{
+            render() {
+                return <h2>Nama : Jason Wong</h2>
+                }
+            }
+        class Kelas extends React.Component{
+            render() {
+                return <h2>Kelas : 2 SIA </h2>
+                }
+            }
+        ReactDOM.render(<Hello/>, document.getElementById("app"));
+        ReactDOM.render(<Nama/>, document.getElementById("nama"));
+        ReactDOM.render(<Kelas/>, document.getElementById("kelas"));
+    </script>
+</body>
+</html>
